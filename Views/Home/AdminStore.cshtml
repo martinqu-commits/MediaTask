@@ -1,0 +1,42 @@
+﻿@{
+    ViewData["Title"] = "Marketing campaign";
+    var buttonList = Model.stores as List<string>;
+}
+<h1>@ViewData["Title"]</h1>
+
+@if (buttonList != null)
+{
+    <form id="myForm" method="post">
+    @foreach (var button in buttonList)
+    {
+        <button type="button" class="campaign-button" data-id="@button">Start @button campaign!</button>
+    }
+    </form>
+}
+
+<div id="message"></div>
+
+@section Scripts {
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.campaign-button').click(function (event) {
+                event.preventDefault(); // Prevent the default form submission
+
+                var campaignType = $(this).data('id');
+
+                $.ajax({
+                    url: '@Url.Action("SendEmails", "Home")',
+                    type: 'POST',
+                    data: { type: campaignType },
+                    success: function (data) {
+                        $('#message').html(data); // Update the message div with the response
+                    },
+                    error: function () {
+                        $('#message').html('An error occurred');
+                    }
+                });
+            });
+        });
+    </script>
+}

@@ -1,0 +1,39 @@
+﻿@{
+    ViewData["Title"] = "Marketing campaign";
+    ViewData["Message"] = "";
+}
+<h1>@ViewData["Title"]</h1>
+
+@if (Model.Type != null)
+{
+    <form id="myForm" method="post">
+        <button type="submit" data-id="@Model.Type">Start @Model.Type campaign!</button>
+    </form>
+}
+
+<div id="message"></div>
+
+@section Scripts {
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#myForm').submit(function (event) {
+                event.preventDefault(); // Prevent the default form submission
+
+                var campaignType = $('button[type="submit"]').data('id');
+
+                $.ajax({
+                    url: '@Url.Action("SendEmails", "Home")',
+                    type: 'POST',
+                    data: { type: campaignType },
+                    success: function (data) {
+                        $('#message').html(data); // Update the message div with the response
+                    },
+                    error: function () {
+                        $('#message').html('An error occurred');
+                    }
+                });
+            });
+        });
+    </script>
+}

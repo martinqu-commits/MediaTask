@@ -1,0 +1,82 @@
+﻿<Clients>
+	<Client ID="12345">
+		<Template Id="1">
+			<Name>template.html</Name>
+			<MarketingData>
+				{"FirstName":"John","LastName":"Doe","CompanyName":"Acme Corp","Sector":"Technology","Email":"john.doe@example.com","PhoneNumber":"123-456-7890"}
+			</MarketingData>
+		</Template>
+	</Client>
+	<Client ID="54321">
+		<Template Id="2">
+			<Name>template.html</Name>
+			<MarketingData>
+				{"FirstName":"Jane","LastName":"Smith","CompanyName":"Tech Innovations","Sector":"Technology","Email":"jane.smith@example.com","PhoneNumber":"987-654-3210"}
+			</MarketingData>
+		</Template>
+	</Client>
+	<Client ID="67890">
+		<Template Id="3">
+			<Name>template.html</Name>
+			<MarketingData>
+				{"FirstName":"Alice","LastName":"Johnson","CompanyName":"Health Plus","Sector":"Healthcare","Email":"alice.johnson@example.com"}
+			</MarketingData>
+		</Template>
+	</Client>
+	<Client ID="98765">
+		<Template Id="4">
+			<Name>template.html</Name>
+			<MarketingData>
+				{"FirstName":"Bob","LastName":"Brown","CompanyName":"Edu World","Sector":"Education","Email":"bob.brown@example.com","PhoneNumber":"321-654-0987"}
+			</MarketingData>
+		</Template>
+	</Client>
+	<Client ID="11223">
+		<Template Id="5">
+			<Name>template.html</Name>
+			<MarketingData>
+				{"FirstName":"Carol","LastName":"Taylor","CompanyName":"Green Earth","Sector":"Environmental","Email":"carol.taylor@example.com","PhoneNumber":"654-321-1234"}
+			</MarketingData>
+		</Template>
+	</Client>
+	<Client ID="44556">
+		<Template Id="6">
+			<Name>template.html</Name>
+			<MarketingData>
+				{"FirstName":"David","LastName":"Wilson","CompanyName":"Auto Drive","Sector":"Automotive","Email":"david.wilson@example.com"}
+			</MarketingData>
+		</Template>
+	</Client>
+	<Client ID="77889">
+		<Template Id="7">
+			<Name>template.html</Name>
+			<MarketingData>
+				{"FirstName":"Eve","LastName":"Davis","CompanyName":"Fintech Solutions","Sector":"Finance","Email":"eve.davis@example.com","PhoneNumber":"789-012-3456"}
+			</MarketingData>
+		</Template>
+	</Client>
+	<Client ID="99000">
+		<Template Id="8">
+			<Name>template.html</Name>
+			<MarketingData>
+				{"FirstName":"Frank","LastName":"Miller","CompanyName":"Retail Masters","Sector":"Retail","Email":"frank.miller@example.com"}
+			</MarketingData>
+		</Template>
+	</Client>
+	<Client ID="22334">
+		<Template Id="9">
+			<Name>template.html</Name>
+			<MarketingData>
+				{"FirstName":"Grace","LastName":"Anderson","CompanyName":"Travel Experts","Sector":"Tourism","Email":"grace.anderson@example.com","PhoneNumber":"456-789-0123"}
+			</MarketingData>
+		</Template>
+	</Client>
+	<Client ID="55667">
+		<Template Id="10">
+			<Name>template.html</Name>
+			<MarketingData>
+				{"FirstName":"Hank","LastName":"Lee","CompanyName":"Logistics Pro","Sector":"Logistics","Email":"hank.lee@example.com"}
+			</MarketingData>
+		</Template>
+	</Client>
+</Clients>
